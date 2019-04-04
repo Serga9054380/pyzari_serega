@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+    <img onclick="nonclick()" width="900" id="likes"  src="okeana.jpg">
+    <div style="font-size: 80px" id="non">
+        0
+    </div>
+</center>
+<audio id="non1" style="display: none">
+    <source src="zvuk-lopayuschiesya-puzyri-bul-k%20(5)%20(www.mp3cut.ru)%20(2).mp3" type="audio/mpeg">
+  </audio>
+</body>
+<script>
+    i=0
+    function nonclick() {
+        i+=1
+        document.getElementById('non').innerHTML=i
+        document.getElementById('non1').play()
+    }
+</script>
+</html>
